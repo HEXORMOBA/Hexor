@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <h2>Milk</h2> -->
+        <div class="loader">
+            <span style="--i:00"></span>
+            <span style="--i:01"></span>
+            <span style="--i:02"></span>
+            <span style="--i:03"></span>
+            <span style="--i:04"></span>
+            <span style="--i:05"></span>
+            <span style="--i:06"></span>
+            <span style="--i:07"></span>
+        </div>
+    </div>
+    <svg>
+    <filter id="Gooay">
+        <feGaussianBlur in="SourceGraphic"
+            stdDeviation="10"/>
+        <feColorMatrix values="
+        1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 20 -10"></feColorMatrix>
+    </filter>
+</svg>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #0062be;
+    width: 100%;
+    transition: 0.5s;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 200px;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 30px;
+    list-style: none;
+    font-weight: 400;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.textbox {
+    width: 600px;
+    position: relative;
+}
+
+.textbox h2 {
+    color: #fff;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+
+.textbox h2 span {
+    /* color: #fff; */
+    font-size: 2em;
+}
+
+.textbox p {
+    color: #fff;
+}
+
+.textbox a {
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    border-radius: 40px;
+    border: 1px solid white;
+    padding: 8px 20px;
+    background: #fff;
+    text-transform: uppercase;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.image {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-right: 50px;
+    width: 600px;
+}
+
+.image img {
+    max-width: 250px;
+}
+
+.thumb {
+    display: flex;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 20px;
+}
+
+.thumb li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+.thumb li img {
+    max-width: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li img:hover {
+    transform: translateY(-10px);
+}
+
+.social {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 40%;
+    right: 30px;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li img {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}

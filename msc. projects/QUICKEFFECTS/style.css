@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: rgb(1, 36, 37);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    /* background-color: rgb(0, 0, 0); */
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.container .circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    animation: animate 3s linear infinite;
+}
+
+.container .circle::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: greenyellow;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px greenyellow, 0 0 60px greenyellow, 0 0 100px greenyellow;
+    border-radius: 50%;
+}
+
+.container .circle:nth-child(2) {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(39, 228, 218);
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+}
+
+.container .circle:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: darkturquoise;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px darkturquoise, 0 0 60px darkturquoise, 0 0 100px darkturquoise;
+    border-radius: 50%;
+}
+
+.container .circle:nth-child(3) {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid darkorange;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+.container .circle:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: darkorange;
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px darkorange, 0 0 60px darkorange, 0 0 100px darkorange;
+    border-radius: 50%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

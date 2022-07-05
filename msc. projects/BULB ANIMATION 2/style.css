@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(37, 37, 37);
+}
+
+.bulb {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.bulb span {
+    position: absolute;
+    inset: 0;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    transform: rotate(calc(45deg * var(--i)));
+}
+
+.bulb span::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 250px;
+    height: 300px;
+    background: url(off.png);
+    background-position: center;
+    background-size: cover;
+    transform: translateX(-50%) translateY(-100px) scale(0.8);
+    animation: animate 4s steps(1) infinite;
+    animation-delay: calc(0.1s*var(--i));
+}
+
+@keyframes animate {
+    0% {
+        background: url(off.png);
+    }
+    50% {
+        background: url(on.png);
+    }
+}

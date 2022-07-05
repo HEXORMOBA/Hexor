@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+    </style>
+    <title>PEPSI</title>
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Flavours</a></li>
+                <li><a href="#">contacts</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>THE TASTE<br><span>i like</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum perspiciatis ea non maxime in error autem voluptate, repellendus aut?</p>
+                <a href="#"> View all products</a>
+            </div>
+            <div class="image">
+                <img src="pepsi001.png" alt="image not found" class="pepsi">
+            </div>
+        </div>
+        <div class="thumb">
+            <ul>
+                <li><img src="pepsi001.png" alt="p1" onclick="imgSlider('pepsi001.png'); changeBgColor('#004f88')"></li>
+                <li><img src="pepsi002.png" alt="p2" onclick="imgSlider('pepsi002.png'); changeBgColor('#a8a6ab')"></li>
+                <li><img src="pepsi003.png" alt="p3" onclick="imgSlider('pepsi003.png'); changeBgColor('#0f1112')"></li>
+                <li><img src="pepsi004.png" alt="p4" onclick="imgSlider('pepsi004.png'); changeBgColor('#0d3465')"></li>
+                <li><img src="pepsi005.png" alt="p5" onclick="imgSlider('pepsi005.png'); changeBgColor('#c28039')"></li>
+                <li><img src="pepsi006.png" alt="p6" onclick="imgSlider('pepsi006.png'); changeBgColor('#bc3d17')"></li>
+            </ul>
+
+        </div>
+        <div class="social">
+            <li><img src="facebook.png" alt="s1"> </li>
+            <li><img src="twitter.png" alt="s2"> </li>
+            <li><img src="instagram.png" alt="s3"> </li>
+
+
+        </div>
+    </section>
+    <script>
+        function imgSlider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec')
+            sec.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
